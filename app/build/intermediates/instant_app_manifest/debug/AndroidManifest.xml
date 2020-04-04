@@ -32,6 +32,10 @@
             android:name="com.example.mobile_weatherforecast_app.WeatherActivity"
             android:label="weather"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.mobile_weatherforecast_app.ForecastActivity"
+            android:label="forecast"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
