@@ -21,6 +21,9 @@
         <activity android:name=".WeatherActivity"
             android:label="weather"
             android:theme="@style/AppTheme" />
+        <activity android:name=".ForecastActivity"
+            android:label="forecast"
+            android:theme="@style/AppTheme" />
 
 
     </application>
