@@ -13,7 +13,6 @@ import androidx.annotation.RequiresApi;
 import java.time.*;
 import java.time.DayOfWeek;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -59,11 +58,12 @@ public class ForecastActivity extends Activity {
     class forecastTask extends AsyncTask<String, Void, String> {
 
 //        @Override
-//        protected void preExecute() {
+//        protected void onPreExecute() {
 //            super .onPreExecute();
 //
-//            // i don't know what am i doing
-//
+//            findViewById(R.id.loader).setVisibility(View.VISIBLE);
+//            findViewById(R.id.mainContainer).setVisibility(View.GONE);
+//            findViewById(R.id.errorText).setVisibility(View.GONE);
 //        }
 
         @Override
