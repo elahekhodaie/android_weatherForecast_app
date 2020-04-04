@@ -58,6 +58,14 @@ public class ForecastActivity extends Activity {
     @SuppressLint("StaticFieldLeak")
     class forecastTask extends AsyncTask<String, Void, String> {
 
+//        @Override
+//        protected void preExecute() {
+//            super .onPreExecute();
+//
+//            // i don't know what am i doing
+//
+//        }
+
         @Override
         protected String doInBackground(String... strings) {
             String APIKey = "8118ed6ee68db2debfaaa5a44c832918";
