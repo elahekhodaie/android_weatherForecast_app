@@ -51,7 +51,6 @@ public class WeatherActivity extends Activity {
             sunsetTxt, windTxt, pressureTxt, humidityTxt;
 
 
-
 //
 //    public void setAPI(String API) {
 //        this.API = API;
@@ -59,7 +58,7 @@ public class WeatherActivity extends Activity {
 //
 //    public void setCITY(String CITY) {
 //        this.CITY = CITY;
-   // }
+    // }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +66,7 @@ public class WeatherActivity extends Activity {
         setContentView(R.layout.activity_weather);
 
         Intent intent = getIntent();
-         CITY = intent.getStringExtra("CITY");
+        CITY = intent.getStringExtra("CITY");
 
         addressTxt = findViewById(R.id.address);
         updated_atTxt = findViewById(R.id.updated_at);
@@ -84,11 +83,7 @@ public class WeatherActivity extends Activity {
         weatherTask wt = new weatherTask();
         wt.execute();
 
-
-
     }
-
-
 
 
     @SuppressLint("StaticFieldLeak")
@@ -104,7 +99,7 @@ public class WeatherActivity extends Activity {
         }
 
         protected String doInBackground(String... args) {
-           // String CITY = "tehran";
+            // String CITY = "tehran";
             String API = "8118ed6ee68db2debfaaa5a44c832918";
 
             String response;

@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 // this function is to get the text field info and start fetching info
 
 
-String cityName ;
+    String cityName;
 
 
     @Override
@@ -72,7 +72,7 @@ String cityName ;
 
 
         final EditText enterCityNameField = (EditText) findViewById(R.id.cityName);
-        Button showWeatherButton = (Button) findViewById(R.id.angry_btn) ;
+        Button showWeatherButton = (Button) findViewById(R.id.angry_btn);
 
 
         String CITY = enterCityNameField.getText().toString();
@@ -83,36 +83,24 @@ String cityName ;
 
     }
 
-    public void sendCityName (View view){
+    public void sendCityName(View view) {
 
         final EditText enterCityNameField = (EditText) findViewById(R.id.cityName);
         String cityName = enterCityNameField.getText().toString();
 
         Intent getWeather = new Intent(this, WeatherActivity.class);
-        final  int resuly = 1;
-        getWeather.putExtra("CITY",cityName);
+        final int resuly = 1;
+        getWeather.putExtra("CITY", cityName);
         startActivity(getWeather);
-
 
 
 //-------------------------------------------
 
     }
 
-    public void setName(String cityName, String textEdit){
+    public void setName(String cityName, String textEdit) {
         cityName = textEdit;
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 //----------------------------------------------------------------------------------------
