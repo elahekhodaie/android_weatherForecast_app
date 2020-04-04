@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -85,6 +86,21 @@ public class WeatherActivity extends Activity {
 
     }
 
+//    public void showWeekly(View view) {
+//
+//        final EditText enterCityNameField = (EditText) findViewById(R.id.cityName);
+//        String cityName = enterCityNameField.getText().toString();
+//
+//
+//        Intent showWeek= new Intent(this, ForecastActivity.class);
+//        final int resuly = 1;
+//        showWeek.putExtra("CITY", cityName);
+//        startActivity(showWeek);
+//
+//
+//
+//    }
+//
 
     @SuppressLint("StaticFieldLeak")
     class weatherTask extends AsyncTask<String, Void, String> {
