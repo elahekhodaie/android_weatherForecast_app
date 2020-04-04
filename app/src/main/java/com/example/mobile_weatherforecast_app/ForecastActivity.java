@@ -4,8 +4,14 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import androidx.annotation.RequiresApi;
+
+import java.time.*;
+import java.time.DayOfWeek;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -62,6 +68,7 @@ public class ForecastActivity extends Activity {
             return response;
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.O)
         @SuppressLint("SetTextI18n")
         @Override
         protected void onPostExecute(String result) {
@@ -73,7 +80,7 @@ public class ForecastActivity extends Activity {
                 // list is the list that contains all data
                 JSONObject list = jsonObj.getJSONObject("list");
                 String[] currentDateAndTime =
-                        String.valueOf(list.getJSONObject("1").getJSONObject("dt_txt")).split("\\s+");
+                        String.valueOf(list.getJSONObject("0").getJSONObject("dt_txt")).split("\\s+");
                 String currentDate = currentDateAndTime[0];
                 int daysIndex = 0;
                 int numberOfTemps = 0;
@@ -81,7 +88,7 @@ public class ForecastActivity extends Activity {
                 int sumMinTemp = 0;
                 // same
                 int sumMaxTemp = 0;
-                int i = 1;
+                int i = 0;
                 while (i < count) {
                     JSONObject object = list.getJSONObject(Integer.toString(i));
                     String[] dateAndTime =
@@ -96,13 +103,41 @@ public class ForecastActivity extends Activity {
                         ++numberOfTemps;
                         ++i;
                     } else {
+                        // temporary minimum temperature (kmn)
                         int tempMinTemp = sumMinTemp / numberOfTemps;
+                        //same
                         int tempMaxTemp = sumMaxTemp / numberOfTemps;
                         numberOfTemps = 0;
                         sumMinTemp = 0;
                         sumMaxTemp = 0;
                         minTemp[daysIndex].setText(Integer.toString(tempMinTemp));
                         maxTemp[daysIndex].setText(Integer.toString(tempMaxTemp));
+                        LocalDate localDate = LocalDate.parse(currentDate);
+                        DayOfWeek dayOfWeek = DayOfWeek.from(localDate);
+                        int currentDayOfWeek = dayOfWeek.getValue();
+                        switch (currentDayOfWeek) {
+                            case 1:
+                                day[daysIndex].setText("MON");
+                                break;
+                            case 2:
+                                day[daysIndex].setText("TUE");
+                                break;
+                            case 3:
+                                day[daysIndex].setText("WED");
+                                break;
+                            case 4:
+                                day[daysIndex].setText("THU");
+                                break;
+                            case 5:
+                                day[daysIndex].setText("FRI");
+                                break;
+                            case 6:
+                                day[daysIndex].setText("SAT");
+                                break;
+                            case 7:
+                                day[daysIndex].setText("SUN");
+                                break;
+                        }
                         ++daysIndex;
                         currentDate = date;
                     }
