@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.view.View;
 
 import androidx.annotation.RequiresApi;
 
@@ -57,14 +58,14 @@ public class ForecastActivity extends Activity {
     @SuppressLint("StaticFieldLeak")
     class forecastTask extends AsyncTask<String, Void, String> {
 
-//        @Override
-//        protected void onPreExecute() {
-//            super .onPreExecute();
-//
-//            findViewById(R.id.loader).setVisibility(View.VISIBLE);
-//            findViewById(R.id.mainContainer).setVisibility(View.GONE);
-//            findViewById(R.id.errorText).setVisibility(View.GONE);
-//        }
+        @Override
+        protected void onPreExecute() {
+            super .onPreExecute();
+
+           // findViewById(R.id.loader).setVisibility(View.VISIBLE);
+            findViewById(R.id.mainContainer).setVisibility(View.VISIBLE);
+          //  findViewById(R.id.errorText).setVisibility(View.GONE);
+        }
 
         @Override
         protected String doInBackground(String... strings) {
