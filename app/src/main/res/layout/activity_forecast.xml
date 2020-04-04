@@ -8,35 +8,160 @@
     android:background="@drawable/greysky">
 
     <TextView
-        android:id="@+id/temp2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="64dp"
         android:background="#79E3E7EA"
         android:fontFamily="sans-serif-thin"
-        android:text="29°C"
-        android:textSize="40dp"
+        android:text="Highest"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/maxTemp1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/temp1"
         tools:visibility="visible" />
 
     <TextView
-        android:id="@+id/temp4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="64dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginBottom="64dp"
+        android:background="#79E3E7EA"
+        android:fontFamily="sans-serif-thin"
+        android:text="Lowest"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/minTemp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="57dp"
+        android:background="#79E3E7EA"
+        android:fontFamily="sans-serif-thin"
+        android:text="Day"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/day1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/minTemp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:background="#79E3E7EA"
+        android:fontFamily="sans-serif-thin"
+        android:text="29°C"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minTemp1"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/minTemp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:background="#79E3E7EA"
+        android:fontFamily="sans-serif-thin"
+        android:text="29°C"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/minTemp5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:background="#79E3E7EA"
+        android:fontFamily="sans-serif-thin"
+        android:text="29°C"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minTemp4"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/minTemp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:background="#79E3E7EA"
+        android:fontFamily="sans-serif-thin"
+        android:text="29°C"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minTemp3"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/minTemp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:background="#79E3E7EA"
+        android:fontFamily="sans-serif-thin"
+        android:text="29°C"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minTemp2"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/maxTemp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:background="#79E3E7EA"
         android:fontFamily="sans-serif-thin"
         android:text="29°C"
-        android:textSize="40dp"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/temp3"
+        app:layout_constraintTop_toBottomOf="@+id/maxTemp1"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/maxTemp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="#79E3E7EA"
+        android:fontFamily="sans-serif-thin"
+        android:text="29°C"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maxTemp3"
         tools:visibility="visible" />
 
     <TextView
@@ -56,19 +181,19 @@
         tools:visibility="visible" />
 
     <TextView
-        android:id="@+id/temp3"
+        android:id="@+id/maxTemp3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="78dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:background="#79E3E7EA"
         android:fontFamily="sans-serif-thin"
         android:text="29°C"
-        android:textSize="40dp"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/temp2"
+        app:layout_constraintTop_toBottomOf="@+id/maxTemp2"
         tools:visibility="visible" />
 
     <TextView
@@ -104,19 +229,19 @@
         tools:visibility="visible" />
 
     <TextView
-        android:id="@+id/temp5"
+        android:id="@+id/maxTemp5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="78dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:background="#79E3E7EA"
         android:fontFamily="sans-serif-thin"
         android:text="29°C"
-        android:textSize="40dp"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/temp4"
+        app:layout_constraintTop_toBottomOf="@+id/maxTemp4"
         tools:visibility="visible" />
 
     <TextView
@@ -136,17 +261,17 @@
         tools:visibility="visible" />
 
     <TextView
-        android:id="@+id/temp1"
+        android:id="@+id/maxTemp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="161dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:background="#79E3E7EA"
         android:fontFamily="sans-serif-thin"
         android:text="29°C"
-        android:textSize="40dp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:visibility="visible" />
@@ -158,7 +283,7 @@
         android:layout_gravity="center"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="154dp"
         android:background="#79E3E7EA"
         android:fontFamily="sans-serif-thin"
         android:text="MON"
@@ -167,14 +292,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:visibility="visible" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="10dp"
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/weather" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
