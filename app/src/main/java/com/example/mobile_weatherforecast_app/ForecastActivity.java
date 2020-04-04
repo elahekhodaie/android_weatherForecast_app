@@ -91,11 +91,10 @@ public class ForecastActivity extends Activity {
                         String.valueOf(list.getJSONObject("0").getJSONObject("dt_txt")).split("\\s+");
                 String currentDate = currentDateAndTime[0];
                 int daysIndex = 0;
-                int numberOfTemps = 0;
-                // sum of minimum temperatures
-                int sumMinTemp = 0;
+                // temporary minimum temperature
+                int tempMinTemp = Integer.MAX_VALUE;
                 // same
-                int sumMaxTemp = 0;
+                int tempMaxTemp = Integer.MIN_VALUE;
                 int i = 0;
                 while (i < count) {
                     JSONObject object = list.getJSONObject(Integer.toString(i));
@@ -104,22 +103,22 @@ public class ForecastActivity extends Activity {
                     String date = dateAndTime[0];
                     if (date.equals(currentDate)) {
                         // i'm dying btw
-                        sumMinTemp +=
+                        // temporary minimum (that naming scheme tho)
+                        int tempMin =
                                 Integer.parseInt(String.valueOf(object.getJSONObject("main").getJSONObject("temp_min")));
-                        sumMaxTemp +=
+                        if (tempMin < tempMinTemp)
+                            tempMinTemp = tempMin;
+                        // same
+                        int tempMax =
                                 Integer.parseInt(String.valueOf(object.getJSONObject("main").getJSONObject("temp_max")));
-                        ++numberOfTemps;
+                        if (tempMax > tempMaxTemp)
+                            tempMaxTemp = tempMax;
                         ++i;
                     } else {
-                        // temporary minimum temperature (kmn)
-                        int tempMinTemp = sumMinTemp / numberOfTemps;
-                        //same
-                        int tempMaxTemp = sumMaxTemp / numberOfTemps;
-                        numberOfTemps = 0;
-                        sumMinTemp = 0;
-                        sumMaxTemp = 0;
                         minTemp[daysIndex].setText(Integer.toString(tempMinTemp));
                         maxTemp[daysIndex].setText(Integer.toString(tempMaxTemp));
+                        tempMinTemp = Integer.MAX_VALUE;
+                        tempMaxTemp = Integer.MIN_VALUE;
                         LocalDate localDate = LocalDate.parse(currentDate);
                         DayOfWeek dayOfWeek = DayOfWeek.from(localDate);
                         int currentDayOfWeek = dayOfWeek.getValue();
