@@ -117,8 +117,8 @@ public class ForecastActivity extends Activity {
                             tempMaxTemp = tempMax;
                         ++i;
                     } else {
-                        minTemp[daysIndex].setText(Float.toString(tempMinTemp));
-                        maxTemp[daysIndex].setText(Float.toString(tempMaxTemp));
+                        minTemp[daysIndex].setText(Integer.toString((int) (tempMinTemp - 273.15)) + "°C");
+                        maxTemp[daysIndex].setText(Integer.toString((int) (tempMaxTemp - 273.15)) + "°C");
                         tempMinTemp = Float.MAX_VALUE;
                         tempMaxTemp = Float.MIN_VALUE;
                         LocalDate localDate = LocalDate.parse(currentDate);
