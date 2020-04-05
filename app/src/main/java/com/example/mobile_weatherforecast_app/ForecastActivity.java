@@ -14,6 +14,7 @@ import androidx.annotation.RequiresApi;
 import java.time.*;
 import java.time.DayOfWeek;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -62,8 +63,8 @@ public class ForecastActivity extends Activity {
         protected void onPreExecute() {
             super .onPreExecute();
 
-           // findViewById(R.id.loader).setVisibility(View.VISIBLE);
-            findViewById(R.id.mainContainer).setVisibility(View.VISIBLE);
+//            findViewById(R.id.loader).setVisibility(View.VISIBLE);
+//            findViewById(R.id.mainContainer).setVisibility(View.VISIBLE);
           //  findViewById(R.id.errorText).setVisibility(View.GONE);
         }
 
@@ -84,42 +85,42 @@ public class ForecastActivity extends Activity {
             try {
                 JSONObject jsonObj = new JSONObject(result);
                 // for each 3 hours we have a different data set, cnt is the number of all data we have
-                JSONObject cnt = jsonObj.getJSONObject("cnt");
-                int count = Integer.parseInt(String.valueOf(cnt));
+//                JSONObject cnt = jsonObj.getJSONObject("cnt");
+                int count = Integer.parseInt(String.valueOf(jsonObj.get("cnt")));
                 // list is the list that contains all data
-                JSONObject list = jsonObj.getJSONObject("list");
+                JSONArray list = jsonObj.getJSONArray("list");
                 String[] currentDateAndTime =
-                        String.valueOf(list.getJSONObject("0").getJSONObject("dt_txt")).split("\\s+");
+                        String.valueOf(list.getJSONObject(0).get("dt_txt")).split("\\s+");
                 String currentDate = currentDateAndTime[0];
                 int daysIndex = 0;
                 // temporary minimum temperature
-                int tempMinTemp = Integer.MAX_VALUE;
+                float tempMinTemp = Float.MAX_VALUE;
                 // same
-                int tempMaxTemp = Integer.MIN_VALUE;
+                float tempMaxTemp = Float.MIN_VALUE;
                 int i = 0;
                 while (i < count) {
-                    JSONObject object = list.getJSONObject(Integer.toString(i));
+                    JSONObject object = list.getJSONObject(i);
                     String[] dateAndTime =
-                            String.valueOf(object.getJSONObject("dt_txt")).split("\\s+");
+                            String.valueOf(object.get("dt_txt")).split("\\s+");
                     String date = dateAndTime[0];
                     if (date.equals(currentDate)) {
                         // i'm dying btw
                         // temporary minimum (that naming scheme tho)
-                        int tempMin =
-                                Integer.parseInt(String.valueOf(object.getJSONObject("main").getJSONObject("temp_min")));
+                        float tempMin =
+                                Float.parseFloat(String.valueOf(object.getJSONObject("main").get("temp_min")));
                         if (tempMin < tempMinTemp)
                             tempMinTemp = tempMin;
                         // same
-                        int tempMax =
-                                Integer.parseInt(String.valueOf(object.getJSONObject("main").getJSONObject("temp_max")));
+                        float tempMax =
+                                Float.parseFloat(String.valueOf(object.getJSONObject("main").get("temp_max")));
                         if (tempMax > tempMaxTemp)
                             tempMaxTemp = tempMax;
                         ++i;
                     } else {
-                        minTemp[daysIndex].setText(Integer.toString(tempMinTemp));
-                        maxTemp[daysIndex].setText(Integer.toString(tempMaxTemp));
-                        tempMinTemp = Integer.MAX_VALUE;
-                        tempMaxTemp = Integer.MIN_VALUE;
+                        minTemp[daysIndex].setText(Float.toString(tempMinTemp));
+                        maxTemp[daysIndex].setText(Float.toString(tempMaxTemp));
+                        tempMinTemp = Float.MAX_VALUE;
+                        tempMaxTemp = Float.MIN_VALUE;
                         LocalDate localDate = LocalDate.parse(currentDate);
                         DayOfWeek dayOfWeek = DayOfWeek.from(localDate);
                         int currentDayOfWeek = dayOfWeek.getValue();

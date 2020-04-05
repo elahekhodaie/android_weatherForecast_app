@@ -837,6 +837,7 @@ id uniform
 id up
 id updated_at
 id useLogo
+id weekButton
 id wind
 id withText
 id wrap
