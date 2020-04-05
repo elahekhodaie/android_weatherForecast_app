@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.View;
 
@@ -25,6 +26,7 @@ public class ForecastActivity extends Activity {
     TextView[] day = new TextView[5];
     TextView[] minTemp = new TextView[5];
     TextView[] maxTemp = new TextView[5];
+    ImageView[] icon = new ImageView[5];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,14 @@ public class ForecastActivity extends Activity {
         maxTemp[2] = findViewById(R.id.maxTemp3);
         maxTemp[3] = findViewById(R.id.maxTemp4);
         maxTemp[4] = findViewById(R.id.maxTemp5);
+//        icon[0] = findViewById(R.id.imageView1);
+        icon[1] = findViewById(R.id.imageView1);
+        icon[2] = findViewById(R.id.imageView2);
+        icon[3] = findViewById(R.id.imageView3);
+        icon[4] = findViewById(R.id.imageView4);
+
+
+
 
         forecastTask ft = new forecastTask();
         ft.execute();
@@ -59,14 +69,14 @@ public class ForecastActivity extends Activity {
     @SuppressLint("StaticFieldLeak")
     class forecastTask extends AsyncTask<String, Void, String> {
 
-        @Override
-        protected void onPreExecute() {
-            super .onPreExecute();
-
+//        @Override
+//        protected void onPreExecute() {
+//            super .onPreExecute();
+//
 //            findViewById(R.id.loader).setVisibility(View.VISIBLE);
-//            findViewById(R.id.mainContainer).setVisibility(View.VISIBLE);
+//            findViewById(R.id.mainContainer).setVisibility(View.GONE);
 //            findViewById(R.id.errorText).setVisibility(View.GONE);
-        }
+//        }
 
         @Override
         protected String doInBackground(String... strings) {
@@ -79,7 +89,7 @@ public class ForecastActivity extends Activity {
         }
 
         @RequiresApi(api = Build.VERSION_CODES.O)
-        @SuppressLint("SetTextI18n")
+        @SuppressLint({"SetTextI18n", "WrongConstant"})
         @Override
         protected void onPostExecute(String result) {
             try {
@@ -97,12 +107,16 @@ public class ForecastActivity extends Activity {
                 float tempMinTemp = Float.MAX_VALUE;
                 // same
                 float tempMaxTemp = Float.MIN_VALUE;
+                String description = "";
                 int i = 0;
                 while (i < count) {
                     JSONObject object = list.getJSONObject(i);
                     String[] dateAndTime =
                             String.valueOf(object.get("dt_txt")).split("\\s+");
                     String date = dateAndTime[0];
+                    if (dateAndTime[1].equals("12:00"))
+                        description =
+                                (String) object.getJSONArray("weather").getJSONObject(0).get("description");
                     if (date.equals(currentDate)) {
                         // i'm dying btw
                         // temporary minimum (that naming scheme tho)
@@ -148,6 +162,37 @@ public class ForecastActivity extends Activity {
                                     break;
                                 case 7:
                                     day[daysIndex].setText("SUN");
+                                    break;
+                            }
+                        }
+                        if (daysIndex != 0) {
+                            switch (description) {
+                                case "clear sky":
+                                    icon[daysIndex].setImageResource(R.drawable.clear);
+                                    break;
+                                case "broken clouds":
+                                    icon[daysIndex].setImageResource(R.drawable.brokenclouds);
+                                    break;
+                                case "light rain":
+                                    icon[daysIndex].setImageResource(R.drawable.rain);
+                                    break;
+                                case "moderate rain":
+                                    icon[daysIndex].setImageResource(R.drawable.showerrain);
+                                    break;
+                                case "thunderstorm":
+                                    icon[daysIndex].setImageResource(R.drawable.thunderstorm);
+                                    break;
+                                case "few clouds":
+                                    icon[daysIndex].setImageResource(R.drawable.fewclouds);
+                                    break;
+                                case "mist":
+                                    icon[daysIndex].setImageResource(R.drawable.mist);
+                                    break;
+                                case "scattered clouds":
+                                    icon[daysIndex].setImageResource(R.drawable.scatteredclouds);
+                                    break;
+                                case "snow":
+                                    icon[daysIndex].setImageResource(R.drawable.snow);
                                     break;
                             }
                         }
