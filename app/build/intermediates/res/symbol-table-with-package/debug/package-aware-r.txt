@@ -711,7 +711,6 @@ id content
 id contentPanel
 id custom
 id customPanel
-id day1
 id day2
 id day3
 id day4
@@ -752,14 +751,12 @@ id listMode
 id list_item
 id loader
 id mainContainer
-id maxTemp1
 id maxTemp2
 id maxTemp3
 id maxTemp4
 id maxTemp5
 id message
 id middle
-id minTemp1
 id minTemp2
 id minTemp3
 id minTemp4
@@ -827,6 +824,8 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
+id textView2
 id time
 id title
 id titleDividerNoCustom
