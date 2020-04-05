@@ -86,21 +86,21 @@ public class WeatherActivity extends Activity {
 
     }
 
-//    public void showWeekly(View view) {
-//
+    public void showWeekly(View view) {
+
 //        final EditText enterCityNameField = (EditText) findViewById(R.id.cityName);
 //        String cityName = enterCityNameField.getText().toString();
-//
-//
-//        Intent showWeek= new Intent(this, ForecastActivity.class);
-//        final int resuly = 1;
-//        showWeek.putExtra("CITY", cityName);
-//        startActivity(showWeek);
-//
-//
-//
-//    }
-//
+        String cityName = "shiraz";
+
+
+        Intent showWeek= new Intent(this, ForecastActivity.class);
+        showWeek.putExtra("CITY", cityName);
+        startActivity(showWeek);
+
+
+
+    }
+
 
     @SuppressLint("StaticFieldLeak")
     class weatherTask extends AsyncTask<String, Void, String> {
