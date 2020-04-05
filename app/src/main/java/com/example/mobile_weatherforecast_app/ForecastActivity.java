@@ -65,7 +65,7 @@ public class ForecastActivity extends Activity {
 
 //            findViewById(R.id.loader).setVisibility(View.VISIBLE);
 //            findViewById(R.id.mainContainer).setVisibility(View.VISIBLE);
-          //  findViewById(R.id.errorText).setVisibility(View.GONE);
+//            findViewById(R.id.errorText).setVisibility(View.GONE);
         }
 
         @Override
