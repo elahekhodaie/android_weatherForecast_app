@@ -6,62 +6,62 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="15"
-8-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml
+8-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml
+9-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:4:5-66
-11-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:4:22-64
+11-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:4:5-66
+11-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:4:22-64
 12
 13    <application
-13-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:7:5-29:19
+13-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:7:5-29:19
 14        android:allowBackup="true"
-14-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:8:9-35
+14-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.0.1] /root/.gradle/caches/transforms-2/files-2.1/72b2b92ec4ab73ff21fb9bc348de3b22/core-1.0.1/AndroidManifest.xml:22:18-86
+15-->[androidx.core:core:1.0.1] /Users/ellykhodaie/.gradle/caches/transforms-2/files-2.1/72b2b92ec4ab73ff21fb9bc348de3b22/core-1.0.1/AndroidManifest.xml:22:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:9:9-43
+17-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:9:9-43
 18        android:label="@string/app_name"
-18-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:10:9-41
+18-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:10:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:11:9-54
+19-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:11:9-54
 20        android:supportsRtl="true"
-20-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:12:9-35
+20-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:12:9-35
 21        android:testOnly="true"
 22        android:theme="@style/AppTheme" >
-22-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:13:9-40
+22-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:13:9-40
 23        <activity android:name="com.example.mobile_weatherforecast_app.MainActivity" >
-23-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:14:9-20:20
-23-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:14:19-47
+23-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:14:9-20:20
+23-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:14:19-47
 24            <intent-filter>
-24-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:15:13-19:29
+24-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:15:13-19:29
 25                <action android:name="android.intent.action.MAIN" />
-25-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:16:17-69
-25-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:16:25-66
+25-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:16:17-69
+25-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:16:25-66
 26
 27                <category android:name="android.intent.category.LAUNCHER" />
-27-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:18:17-77
-27-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:18:27-74
+27-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:18:17-77
+27-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:18:27-74
 28            </intent-filter>
 29        </activity>
 30        <activity
-30-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:21:9-23:47
+30-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:21:9-23:47
 31            android:name="com.example.mobile_weatherforecast_app.WeatherActivity"
-31-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:21:19-50
+31-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:21:19-50
 32            android:label="weather"
-32-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:22:13-36
+32-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:22:13-36
 33            android:theme="@style/AppTheme" />
-33-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:23:13-44
+33-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:23:13-44
 34        <activity
-34-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:24:9-26:47
+34-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:24:9-26:47
 35            android:name="com.example.mobile_weatherforecast_app.ForecastActivity"
-35-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:24:19-51
+35-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:24:19-51
 36            android:label="forecast"
-36-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:25:13-37
+36-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:25:13-37
 37            android:theme="@style/AppTheme" />
-37-->/home/sina/Android/v2/mobile_weatherForecast_app_b616d074655718ea9bf48b8758b15bc527fa39bb/mobile_weatherForecast_app-b616d074655718ea9bf48b8758b15bc527fa39bb/app/src/main/AndroidManifest.xml:26:13-44
+37-->/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/AndroidManifest.xml:26:13-44
 38    </application>
 39
 40</manifest>
