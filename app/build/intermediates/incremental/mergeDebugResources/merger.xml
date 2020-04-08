@@ -2668,12 +2668,317 @@
     </style><style name="Base.ThemeOverlay.AppCompat.Dialog" parent="Base.V21.ThemeOverlay.AppCompat.Dialog">
         <item name="android:windowIsFloating">false</item>
         <item name="android:windowElevation">0dp</item>
-    </style></file><file path="/Users/ellykhodaie/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/values-xlarge-v4/values-xlarge-v4.xml" qualifiers="xlarge-v4"><item name="abc_dialog_fixed_height_major" type="dimen">60%</item><item name="abc_dialog_fixed_height_minor" type="dimen">90%</item><item name="abc_dialog_fixed_width_major" type="dimen">50%</item><item name="abc_dialog_fixed_width_minor" type="dimen">70%</item><item name="abc_dialog_min_width_major" type="dimen">45%</item><item name="abc_dialog_min_width_minor" type="dimen">72%</item></file><file path="/Users/ellykhodaie/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/values-zh-rCN/values-zh-rCN.xml" qualifiers="zh-rCN"><string msgid="4600421777120114993" name="abc_action_bar_home_description">"转到主屏幕"</string><string msgid="1594238315039666878" name="abc_action_bar_up_description">"转到上一层级"</string><string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多选项"</string><string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string><string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"查看全部"</string><string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"选择应用"</string><string msgid="121134116657445385" name="abc_capital_off">"关闭"</string><string msgid="3405795526292276155" name="abc_capital_on">"开启"</string><string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"Delete 键"</string><string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"Enter 键"</string><string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Fn+"</string><string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"空格键"</string><string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"Menu+"</string><string msgid="7723749260725869598" name="abc_search_hint">"搜索…"</string><string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查询"</string><string msgid="2550479030709304392" name="abc_searchview_description_query">"搜索查询"</string><string msgid="8264924765203268293" name="abc_searchview_description_search">"搜索"</string><string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查询"</string><string msgid="893419373245838918" name="abc_searchview_description_voice">"语音搜索"</string><string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享方式"</string><string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"使用<ns1:g id="APPLICATION_NAME">%s</ns1:g>分享"</string><string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收起"</string><string msgid="146198913615257606" name="search_menu_title">"搜索"</string></file><file path="/Users/ellykhodaie/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/values-zh-rHK/values-zh-rHK.xml" qualifiers="zh-rHK"><string msgid="4600421777120114993" name="abc_action_bar_home_description">"瀏覽主頁"</string><string msgid="1594238315039666878" name="abc_action_bar_up_description">"向上瀏覽"</string><string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多選項"</string><string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string><string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"顯示全部"</string><string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"選擇應用程式"</string><string msgid="121134116657445385" name="abc_capital_off">"關閉"</string><string msgid="3405795526292276155" name="abc_capital_on">"開啟"</string><string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alt +"</string><string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string><string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"刪除"</string><string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"Enter 鍵"</string><string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Fn +"</string><string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Meta +"</string><string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Shift +"</string><string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"空白鍵"</string><string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Sym +"</string><string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"Menu +"</string><string msgid="7723749260725869598" name="abc_search_hint">"搜尋…"</string><string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查詢"</string><string msgid="2550479030709304392" name="abc_searchview_description_query">"搜尋查詢"</string><string msgid="8264924765203268293" name="abc_searchview_description_search">"搜尋"</string><string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查詢"</string><string msgid="893419373245838918" name="abc_searchview_description_voice">"語音搜尋"</string><string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享對象"</string><string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"使用「<ns1:g id="APPLICATION_NAME">%s</ns1:g>」分享"</string><string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收合"</string><string msgid="146198913615257606" name="search_menu_title">"搜尋"</string></file><file path="/Users/ellykhodaie/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/values-zh-rTW/values-zh-rTW.xml" qualifiers="zh-rTW"><string msgid="4600421777120114993" name="abc_action_bar_home_description">"瀏覽首頁"</string><string msgid="1594238315039666878" name="abc_action_bar_up_description">"向上瀏覽"</string><string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多選項"</string><string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string><string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"查看全部"</string><string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"選擇應用程式"</string><string msgid="121134116657445385" name="abc_capital_off">"關閉"</string><string msgid="3405795526292276155" name="abc_capital_on">"開啟"</string><string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alt +"</string><string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string><string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"Delete 鍵"</string><string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"Enter 鍵"</string><string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Fn +"</string><string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Meta +"</string><string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Shift +"</string><string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"空格鍵"</string><string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Sym +"</string><string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"Menu +"</string><string msgid="7723749260725869598" name="abc_search_hint">"搜尋…"</string><string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查詢"</string><string msgid="2550479030709304392" name="abc_searchview_description_query">"搜尋查詢"</string><string msgid="8264924765203268293" name="abc_searchview_description_search">"搜尋"</string><string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查詢"</string><string msgid="893419373245838918" name="abc_searchview_description_voice">"語音搜尋"</string><string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"選擇分享對象"</string><string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"與「<ns1:g id="APPLICATION_NAME">%s</ns1:g>」分享"</string><string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收合"</string><string msgid="146198913615257606" name="search_menu_title">"搜尋"</string></file><file path="/Users/ellykhodaie/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/values-zu/values-zu.xml" qualifiers="zu"><string msgid="4600421777120114993" name="abc_action_bar_home_description">"Zulazulela ekhaya"</string><string msgid="1594238315039666878" name="abc_action_bar_up_description">"Zulazulela phezulu"</string><string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Izinketho eziningi"</string><string msgid="4076576682505996667" name="abc_action_mode_done">"Kwenziwe"</string><string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Buka konke"</string><string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Khetha uhlelo lokusebenza"</string><string msgid="121134116657445385" name="abc_capital_off">"VALIWE"</string><string msgid="3405795526292276155" name="abc_capital_on">"VULIWE"</string><string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"susa"</string><string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"enter"</string><string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Function+"</string><string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"space"</string><string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"Imenyu+"</string><string msgid="7723749260725869598" name="abc_search_hint">"Iyasesha..."</string><string msgid="3691816814315814921" name="abc_searchview_description_clear">"Sula inkinga"</string><string msgid="2550479030709304392" name="abc_searchview_description_query">"Umbuzo wosesho"</string><string msgid="8264924765203268293" name="abc_searchview_description_search">"Sesha"</string><string msgid="8928215447528550784" name="abc_searchview_description_submit">"Hambisa umbuzo"</string><string msgid="893419373245838918" name="abc_searchview_description_voice">"Ukusesha ngezwi"</string><string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Yabelana no-"</string><string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"Yabelana ne-<ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string><string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Goqa"</string><string msgid="146198913615257606" name="search_menu_title">"Sesha"</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res"><file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/ic_launcher_background.xml" preprocessing="true" qualifiers=""><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png" qualifiers="xxxhdpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png" qualifiers="mdpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png" qualifiers="ldpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png" qualifiers="xxhdpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png" qualifiers="hdpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png" qualifiers="xhdpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml" qualifiers="anydpi-v21" type="drawable"/></file></source><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/rs/debug"/><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res"><file name="bg_gradient" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/bg_gradient.xml" qualifiers="" type="drawable"/><file name="brokenclouds" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/brokenclouds.png" qualifiers="" type="drawable"/><file name="buttonshape" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/buttonshape.xml" qualifiers="" type="drawable"/><file name="clear" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/clear.png" qualifiers="" type="drawable"/><file name="cloudysky" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/cloudysky.jpg" qualifiers="" type="drawable"/><file name="fewclouds" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/fewclouds.png" qualifiers="" type="drawable"/><file name="greysky" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/greysky.jpg" qualifiers="" type="drawable"/><file name="humidity" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/humidity.png" qualifiers="" type="drawable"/><file name="info" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/info.png" qualifiers="" type="drawable"/><file name="mist" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/mist.png" qualifiers="" type="drawable"/><file name="nightsky" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/nightsky.jpg" qualifiers="" type="drawable"/><file name="pressure" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/pressure.png" qualifiers="" type="drawable"/><file name="rain" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/rain.png" qualifiers="" type="drawable"/><file name="scatteredclouds" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/scatteredclouds.png" qualifiers="" type="drawable"/><file name="showerrain" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/showerrain.png" qualifiers="" type="drawable"/><file name="snow" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/snow.png" qualifiers="" type="drawable"/><file name="sunrise" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/sunrise.png" qualifiers="" type="drawable"/><file name="sunset" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/sunset.png" qualifiers="" type="drawable"/><file name="textfieldshape" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/textfieldshape.xml" qualifiers="" type="drawable"/><file name="thunderstorm" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/thunderstorm.png" qualifiers="" type="drawable"/><file name="weather" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/weather.png" qualifiers="" type="drawable"/><file name="week" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/week.png" qualifiers="" type="drawable"/><file name="wind" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/wind.png" qualifiers="" type="drawable"/><file name="ic_launcher_foreground" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file name="activity_forecast" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/layout/activity_forecast.xml" qualifiers="" type="layout"/><file name="activity_main" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="activity_weather" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/layout/activity_weather.xml" qualifiers="" type="layout"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/values/colors.xml" qualifiers=""><color name="colorPrimary">#008577</color><color name="colorPrimaryDark">#00574B</color><color name="colorAccent">#D81B60</color></file><file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">mobile_weatherForecast_app</string></file><file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/values/styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style></file><file path="/Users/ellykhodaie/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/values-xlarge-v4/values-xlarge-v4.xml" qualifiers="xlarge-v4"><item name="abc_dialog_fixed_height_major" type="dimen">60%</item><item name="abc_dialog_fixed_height_minor" type="dimen">90%</item><item name="abc_dialog_fixed_width_major" type="dimen">50%</item><item name="abc_dialog_fixed_width_minor" type="dimen">70%</item><item name="abc_dialog_min_width_major" type="dimen">45%</item><item name="abc_dialog_min_width_minor" type="dimen">72%</item></file><file path="/Users/ellykhodaie/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/values-zh-rCN/values-zh-rCN.xml" qualifiers="zh-rCN"><string msgid="4600421777120114993" name="abc_action_bar_home_description">"转到主屏幕"</string><string msgid="1594238315039666878" name="abc_action_bar_up_description">"转到上一层级"</string><string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多选项"</string><string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string><string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"查看全部"</string><string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"选择应用"</string><string msgid="121134116657445385" name="abc_capital_off">"关闭"</string><string msgid="3405795526292276155" name="abc_capital_on">"开启"</string><string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"Delete 键"</string><string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"Enter 键"</string><string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Fn+"</string><string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"空格键"</string><string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"Menu+"</string><string msgid="7723749260725869598" name="abc_search_hint">"搜索…"</string><string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查询"</string><string msgid="2550479030709304392" name="abc_searchview_description_query">"搜索查询"</string><string msgid="8264924765203268293" name="abc_searchview_description_search">"搜索"</string><string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查询"</string><string msgid="893419373245838918" name="abc_searchview_description_voice">"语音搜索"</string><string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享方式"</string><string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"使用<ns1:g id="APPLICATION_NAME">%s</ns1:g>分享"</string><string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收起"</string><string msgid="146198913615257606" name="search_menu_title">"搜索"</string></file><file path="/Users/ellykhodaie/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/values-zh-rHK/values-zh-rHK.xml" qualifiers="zh-rHK"><string msgid="4600421777120114993" name="abc_action_bar_home_description">"瀏覽主頁"</string><string msgid="1594238315039666878" name="abc_action_bar_up_description">"向上瀏覽"</string><string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多選項"</string><string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string><string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"顯示全部"</string><string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"選擇應用程式"</string><string msgid="121134116657445385" name="abc_capital_off">"關閉"</string><string msgid="3405795526292276155" name="abc_capital_on">"開啟"</string><string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alt +"</string><string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string><string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"刪除"</string><string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"Enter 鍵"</string><string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Fn +"</string><string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Meta +"</string><string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Shift +"</string><string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"空白鍵"</string><string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Sym +"</string><string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"Menu +"</string><string msgid="7723749260725869598" name="abc_search_hint">"搜尋…"</string><string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查詢"</string><string msgid="2550479030709304392" name="abc_searchview_description_query">"搜尋查詢"</string><string msgid="8264924765203268293" name="abc_searchview_description_search">"搜尋"</string><string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查詢"</string><string msgid="893419373245838918" name="abc_searchview_description_voice">"語音搜尋"</string><string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享對象"</string><string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"使用「<ns1:g id="APPLICATION_NAME">%s</ns1:g>」分享"</string><string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收合"</string><string msgid="146198913615257606" name="search_menu_title">"搜尋"</string></file><file path="/Users/ellykhodaie/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/values-zh-rTW/values-zh-rTW.xml" qualifiers="zh-rTW"><string msgid="4600421777120114993" name="abc_action_bar_home_description">"瀏覽首頁"</string><string msgid="1594238315039666878" name="abc_action_bar_up_description">"向上瀏覽"</string><string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多選項"</string><string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string><string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"查看全部"</string><string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"選擇應用程式"</string><string msgid="121134116657445385" name="abc_capital_off">"關閉"</string><string msgid="3405795526292276155" name="abc_capital_on">"開啟"</string><string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alt +"</string><string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string><string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"Delete 鍵"</string><string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"Enter 鍵"</string><string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Fn +"</string><string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Meta +"</string><string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Shift +"</string><string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"空格鍵"</string><string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Sym +"</string><string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"Menu +"</string><string msgid="7723749260725869598" name="abc_search_hint">"搜尋…"</string><string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查詢"</string><string msgid="2550479030709304392" name="abc_searchview_description_query">"搜尋查詢"</string><string msgid="8264924765203268293" name="abc_searchview_description_search">"搜尋"</string><string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查詢"</string><string msgid="893419373245838918" name="abc_searchview_description_voice">"語音搜尋"</string><string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"選擇分享對象"</string><string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"與「<ns1:g id="APPLICATION_NAME">%s</ns1:g>」分享"</string><string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收合"</string><string msgid="146198913615257606" name="search_menu_title">"搜尋"</string></file><file path="/Users/ellykhodaie/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/values-zu/values-zu.xml" qualifiers="zu"><string msgid="4600421777120114993" name="abc_action_bar_home_description">"Zulazulela ekhaya"</string><string msgid="1594238315039666878" name="abc_action_bar_up_description">"Zulazulela phezulu"</string><string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Izinketho eziningi"</string><string msgid="4076576682505996667" name="abc_action_mode_done">"Kwenziwe"</string><string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Buka konke"</string><string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Khetha uhlelo lokusebenza"</string><string msgid="121134116657445385" name="abc_capital_off">"VALIWE"</string><string msgid="3405795526292276155" name="abc_capital_on">"VULIWE"</string><string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"susa"</string><string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"enter"</string><string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Function+"</string><string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"space"</string><string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"Imenyu+"</string><string msgid="7723749260725869598" name="abc_search_hint">"Iyasesha..."</string><string msgid="3691816814315814921" name="abc_searchview_description_clear">"Sula inkinga"</string><string msgid="2550479030709304392" name="abc_searchview_description_query">"Umbuzo wosesho"</string><string msgid="8264924765203268293" name="abc_searchview_description_search">"Sesha"</string><string msgid="8928215447528550784" name="abc_searchview_description_submit">"Hambisa umbuzo"</string><string msgid="893419373245838918" name="abc_searchview_description_voice">"Ukusesha ngezwi"</string><string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Yabelana no-"</string><string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"Yabelana ne-<ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string><string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Goqa"</string><string msgid="146198913615257606" name="search_menu_title">"Sesha"</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res"><file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/ic_launcher_background.xml" preprocessing="true" qualifiers=""><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png" qualifiers="xxxhdpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png" qualifiers="mdpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png" qualifiers="ldpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png" qualifiers="xxhdpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png" qualifiers="hdpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png" qualifiers="xhdpi-v4" type="drawable"/><generated-file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml" qualifiers="anydpi-v21" type="drawable"/></file></source><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/rs/debug"/><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res"><file name="bg_gradient" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/bg_gradient.xml" qualifiers="" type="drawable"/><file name="brokenclouds" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/brokenclouds.png" qualifiers="" type="drawable"/><file name="buttonshape" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/buttonshape.xml" qualifiers="" type="drawable"/><file name="clear" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/clear.png" qualifiers="" type="drawable"/><file name="cloudysky" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/cloudysky.jpg" qualifiers="" type="drawable"/><file name="fewclouds" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/fewclouds.png" qualifiers="" type="drawable"/><file name="greysky" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/greysky.jpg" qualifiers="" type="drawable"/><file name="humidity" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/humidity.png" qualifiers="" type="drawable"/><file name="info" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/info.png" qualifiers="" type="drawable"/><file name="mist" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/mist.png" qualifiers="" type="drawable"/><file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/nightsky.jpg" qualifiers=""/><file name="pressure" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/pressure.png" qualifiers="" type="drawable"/><file name="rain" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/rain.png" qualifiers="" type="drawable"/><file name="scatteredclouds" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/scatteredclouds.png" qualifiers="" type="drawable"/><file name="showerrain" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/showerrain.png" qualifiers="" type="drawable"/><file name="snow" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/snow.png" qualifiers="" type="drawable"/><file name="sunrise" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/sunrise.png" qualifiers="" type="drawable"/><file name="sunset" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/sunset.png" qualifiers="" type="drawable"/><file name="textfieldshape" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/textfieldshape.xml" qualifiers="" type="drawable"/><file name="thunderstorm" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/thunderstorm.png" qualifiers="" type="drawable"/><file name="weather" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/weather.png" qualifiers="" type="drawable"/><file name="week" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/week.png" qualifiers="" type="drawable"/><file name="wind" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/wind.png" qualifiers="" type="drawable"/><file name="ic_launcher_foreground" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file name="baskerville" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/font/baskerville.ttc" qualifiers="" type="font"/><file name="fonts" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/font/fonts.xml" qualifiers="" type="font"/><file name="georgia" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/font/georgia.ttf" qualifiers="" type="font"/><file name="activity_forecast" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/layout/activity_forecast.xml" qualifiers="" type="layout"/><file name="activity_main" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="activity_weather" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/layout/activity_weather.xml" qualifiers="" type="layout"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/values/colors.xml" qualifiers=""><color name="colorPrimary">#008577</color><color name="colorPrimaryDark">#00574B</color><color name="colorAccent">#D81B60</color></file><file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">mobile_weatherForecast_app</string><string-array name="city_dataBase">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Bouvet Island</item>
+        <item>Brazil</item>
+        <item>British Indian Ocean Territory</item>
+        <item>British Virgin Islands</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Christmas Island</item>
+        <item>Cocos (Keeling) Islands</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo</item>
+        <item>Cook Islands</item>
+        <item>Costa Rica</item>
+        <item>Cote d\'Ivoire</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Democratic Republic of the Congo</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>East Timor</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Faeroe Islands</item>
+        <item>Falkland Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>Former Yugoslav Republic of Macedonia</item>
+        <item>France</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>French Southern Territories</item>
+        <item>Gabon</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Heard Island and McDonald Islands</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Montserrat</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands Antilles</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>Norfolk Island</item>
+        <item>North Korea</item>
+        <item>Northern Marianas</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Pitcairn Islands</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Reunion</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Sqo Tome and Principe</item>
+        <item>Saint Helena</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Pierre and Miquelon</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Georgia and the South Sandwich Islands</item>
+        <item>South Korea</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Svalbard and Jan Mayen</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>The Bahamas</item>
+        <item>The Gambia</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Tuvalu</item>
+        <item>Virgin Islands</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>United States Minor Outlying Islands</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vatican City</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Wallis and Futuna</item>
+        <item>Western Sahara</item>
+        <item>Yemen</item>
+        <item>Yugoslavia</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+
+        <item>tehran</item>
+        <item>shiraz</item>
+        <item>qom</item>
+        <item>yazd</item>
+        <item>kashan</item>
+        <item>mashhad</item>
+        <item>birjand</item>
+        <item>bojnurd</item>
+        <item>rey</item>
+        <item>zahedan</item>
+        <item>bushehr</item>
+        <item>sari</item>
+        <item>golestan</item>
+        <item>gorgan</item>
+        <item>tabriz</item>
+        <item>urmiya</item>
+        <item>bane</item>
+        <item>shahrekord</item>
+        <item>yasuj</item>
+        <item>kerman</item>
+        <item>paris</item>
+        <item>vienna</item>
+        <item>baku</item>
+        <item>manama</item>
+        <item>minsk</item>
+        <item>brussels</item>
+        <item>sofia</item>
+        <item>ottawa</item>
+        <item>san jose</item>
+        <item>havana</item>
+        <item>prague</item>
+        <item>asmara</item>
+        <item>tallinn</item>
+        <item>tbilisi</item>
+        <item>accra</item>
+        <item>budapest</item>
+        <item>baghdad</item>
+        <item>rome</item>
+        <item>jerusalem</item>
+        <item>tokyo</item>
+        <item>mexico city</item>
+        <item>oslo</item>
+
+        <item>milan</item>
+        <item>stockholm</item>
+        <item>berlin</item>
+        <item>frankfurt</item>
+        <item>munich</item>
+        <item>london</item>
+        <item>scotland</item>
+        <item>wales</item>
+        <item>ireland</item>
+        <item>austria</item>
+        <item>sistanBaluchestan</item>
+        <item>luanda</item>
+        <item>yerevan</item>
+
+
+
+
+
+
+    </string-array></file><file path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/values/styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style></file></source><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/rs/debug"/><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </style></file><file name="maincloud" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/maincloud.jpg" qualifiers="" type="drawable"/><file name="c" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/c.jpg" qualifiers="" type="drawable"/><file name="nightsky" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/nightsky.JPG" qualifiers="" type="drawable"/><file name="d" path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/main/res/drawable/d.jpg" qualifiers="" type="drawable"/></source><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/rs/debug"/><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ellykhodaie/Desktop/mobile_weatherForecast_app2/app/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>

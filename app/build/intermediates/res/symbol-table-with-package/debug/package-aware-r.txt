@@ -11,6 +11,7 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+array city_dataBase
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -631,14 +632,17 @@ drawable abc_vector_test
 drawable bg_gradient
 drawable brokenclouds
 drawable buttonshape
+drawable c
 drawable clear
 drawable cloudysky
+drawable d
 drawable fewclouds
 drawable greysky
 drawable humidity
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable info
+drawable maincloud
 drawable mist
 drawable nightsky
 drawable notification_action_background
@@ -667,6 +671,9 @@ drawable tooltip_frame_light
 drawable weather
 drawable week
 drawable wind
+font baskerville
+font fonts
+font georgia
 id ALT
 id CTRL
 id FUNCTION
@@ -674,6 +681,7 @@ id META
 id SHIFT
 id SYM
 id about
+id act
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -712,7 +720,6 @@ id center_vertical
 id chains
 id checkbox
 id chronometer
-id cityName
 id clip_horizontal
 id clip_vertical
 id collapseActionView
@@ -849,7 +856,6 @@ id uniform
 id up
 id updated_at
 id useLogo
-id weekButton
 id wind
 id withText
 id wrap
