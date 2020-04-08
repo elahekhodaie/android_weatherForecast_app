@@ -166,33 +166,46 @@ public class ForecastActivity extends Activity {
                             }
                         }
                         if (daysIndex != 0) {
+//                            String weatherDescription = "";
+//                            int id =
+//
+                            int id;
                             switch (description) {
                                 case "clear sky":
-                                    icon[daysIndex].setImageResource(R.drawable.clear);
+                                    id = getResources().getIdentifier("clear.png", "drawable", getPackageName());
+                                    icon[daysIndex].setImageResource(id);
                                     break;
                                 case "broken clouds":
-                                    icon[daysIndex].setImageResource(R.drawable.brokenclouds);
+                                    id = getResources().getIdentifier("brokenclouds.png", "drawable", getPackageName());
+                                    icon[daysIndex].setImageResource(id);
                                     break;
                                 case "light rain":
-                                    icon[daysIndex].setImageResource(R.drawable.rain);
+                                    id = getResources().getIdentifier("rain.png", "drawable", getPackageName());
+                                    icon[daysIndex].setImageResource(id);
                                     break;
                                 case "moderate rain":
-                                    icon[daysIndex].setImageResource(R.drawable.showerrain);
+                                    id = getResources().getIdentifier("showerrain.png", "drawable", getPackageName());
+                                    icon[daysIndex].setImageResource(id);
                                     break;
                                 case "thunderstorm":
-                                    icon[daysIndex].setImageResource(R.drawable.thunderstorm);
+                                    id = getResources().getIdentifier("thunderstorm.png", "drawable", getPackageName());
+                                    icon[daysIndex].setImageResource(id);
                                     break;
                                 case "few clouds":
-                                    icon[daysIndex].setImageResource(R.drawable.fewclouds);
+                                    id = getResources().getIdentifier("fewclouds.png", "drawable", getPackageName());
+                                    icon[daysIndex].setImageResource(id);
                                     break;
                                 case "mist":
-                                    icon[daysIndex].setImageResource(R.drawable.mist);
+                                    id = getResources().getIdentifier("mist.png", "drawable", getPackageName());
+                                    icon[daysIndex].setImageResource(id);
                                     break;
                                 case "scattered clouds":
-                                    icon[daysIndex].setImageResource(R.drawable.scatteredclouds);
+                                    id = getResources().getIdentifier("scatteredclouds.png", "drawable", getPackageName());
+                                    icon[daysIndex].setImageResource(id);
                                     break;
                                 case "snow":
-                                    icon[daysIndex].setImageResource(R.drawable.snow);
+                                    id = getResources().getIdentifier("snow.png", "drawable", getPackageName());
+                                    icon[daysIndex].setImageResource(id);
                                     break;
                             }
                         }
