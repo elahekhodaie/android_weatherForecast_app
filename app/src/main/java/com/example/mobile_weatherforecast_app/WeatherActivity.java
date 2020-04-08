@@ -91,11 +91,11 @@ public class WeatherActivity extends Activity {
 
 //        final EditText enterCityNameField = (EditText) findViewById(R.id.cityName);
 //        String cityName = enterCityNameField.getText().toString();
-        String cityName = "shiraz";
-
+        Intent intent = getIntent();
+        CITY = intent.getStringExtra("CITY");
 
         Intent showWeek= new Intent(this, ForecastActivity.class);
-        showWeek.putExtra("CITY", cityName);
+        showWeek.putExtra("CITY", CITY);
         startActivity(showWeek);
 
 
