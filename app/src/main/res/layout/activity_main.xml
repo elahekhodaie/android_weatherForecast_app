@@ -5,13 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/nightsky"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/act"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:background="@drawable/textfieldshape"
+        android:completionHint="select a city"
+        android:completionThreshold="1"
+
+        android:hint="Enter your city :"
+        android:popupBackground= "@drawable/c"
+        android:radius="14dp"
+
+
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:textColorHint="#2b6a9b"
+        android:textStyle="bold|italic"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/angry_btn"
         android:layout_width="220dp"
         android:layout_height="55dp"
         android:layout_marginStart="70dp"
+        android:textStyle="normal"
 
         android:layout_marginLeft="70dp"
         android:layout_marginEnd="70dp"
@@ -23,52 +50,42 @@
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="15"
-        android:text="show result"
+        android:text="show weather"
+
 
         android:textColor="#95aecf"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cityName" />
+        />
 
-    <AutoCompleteTextView
-        android:id="@+id/act"
-        android:background="@drawable/textfieldshape"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="105dp"
-        android:completionHint="select a city"
-        android:completionThreshold="2"
-        android:hint="Select your city"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <EditText-->
+<!--        android:id="@+id/cityName"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="291dp"-->
+<!--        android:layout_marginBottom="57dp"-->
+<!--        android:background="@drawable/textfieldshape"-->
+<!--        android:cursorVisible="true"-->
+<!--        android:hint="Enter your City here :"-->
+<!--        android:inputType="textAutoComplete|textAutoCorrect"-->
+
+<!--        android:padding="15dp"-->
+<!--        android:textColorHint="#2b6a9b"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/angry_btn"-->
+<!--        app:layout_constraintCircleAngle="45"-->
+
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.491"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 
-    <EditText
-        android:id="@+id/cityName"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="291dp"
-        android:layout_marginBottom="57dp"
-        android:background="@drawable/textfieldshape"
-        android:hint="Enter your City here :"
-        android:cursorVisible="true"
-        app:layout_constraintCircleAngle="45"
 
-        android:inputType="textAutoComplete|textAutoCorrect"
-        android:padding="15dp"
-        android:textColorHint="#2b6a9b"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/angry_btn"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

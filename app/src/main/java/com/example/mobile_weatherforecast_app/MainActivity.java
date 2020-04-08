@@ -13,6 +13,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -71,8 +73,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        final EditText enterCityNameField = (EditText) findViewById(R.id.cityName);
+      //  final EditText enterCityNameField = (EditText) findViewById(R.id.cityName);
+        final AutoCompleteTextView enterCityNameField = (AutoCompleteTextView)findViewById(R.id.act) ;
         Button showWeatherButton = (Button) findViewById(R.id.angry_btn);
+
+        String[] cities = getResources().getStringArray(R.array.city_dataBase);
+        AutoCompleteTextView field = findViewById(R.id.act);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, cities);
+        field.setAdapter(adapter);
 
 
         String CITY = enterCityNameField.getText().toString();
@@ -85,13 +93,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendCityName(View view) {
 
-        final EditText enterCityNameField = (EditText) findViewById(R.id.cityName);
+//        final EditText enterCityNameField = (EditText) findViewById(R.id.cityName);
+//        String cityName = enterCityNameField.getText().toString();
+
+
+        final AutoCompleteTextView enterCityNameField = (AutoCompleteTextView) findViewById(R.id.act) ;
         String cityName = enterCityNameField.getText().toString();
 
         Intent getWeather = new Intent(this, WeatherActivity.class);
         final int resuly = 1;
         getWeather.putExtra("CITY", cityName);
         startActivity(getWeather);
+        enterCityNameField.getText().clear();
 
 
 //-------------------------------------------
