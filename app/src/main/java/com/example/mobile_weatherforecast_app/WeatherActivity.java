@@ -95,8 +95,13 @@ public class WeatherActivity extends Activity {
         } else {
             Toast.makeText(this, "There is no internet connection :(",
                     Toast.LENGTH_LONG).show();
-
+            offlineMode();
         }
+    }
+
+    public void offlineMode() {
+        Intent forecast = new Intent(this, ForecastActivity.class);
+        startActivity(forecast);
     }
 
     public void showWeekly(View view) {
