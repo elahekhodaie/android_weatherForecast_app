@@ -12,6 +12,8 @@ import android.view.View;
 
 import androidx.annotation.RequiresApi;
 
+import com.squareup.picasso.Picasso;
+
 import java.time.*;
 import java.time.DayOfWeek;
 
@@ -53,10 +55,10 @@ public class ForecastActivity extends Activity {
         maxTemp[3] = findViewById(R.id.maxTemp4);
         maxTemp[4] = findViewById(R.id.maxTemp5);
 //        icon[0] = findViewById(R.id.imageView1);
-        icon[1] = findViewById(R.id.imageView1);
-        icon[2] = findViewById(R.id.imageView2);
-        icon[3] = findViewById(R.id.imageView3);
-        icon[4] = findViewById(R.id.imageView4);
+        icon[1] = (ImageView) findViewById(R.id.imageView1);
+        icon[2] = (ImageView) findViewById(R.id.imageView2);
+        icon[3] = (ImageView) findViewById(R.id.imageView3);
+        icon[4] =(ImageView)  findViewById(R.id.imageView4);
 
 
 
@@ -169,7 +171,17 @@ public class ForecastActivity extends Activity {
 //                            String weatherDescription = "";
 //                            int id =
 //
+                            System.out.println("im insiiiide here --------------------------------------------");
                             int id;
+                            //-------------------------------------------------------------------------
+                            // the picasso part
+//
+//                            String icons =  (String) object.getJSONArray("weather").getJSONObject(0).get("icon");
+//                            String iconUrl = "http://openweathermap.org/img/w/" + icons + ".png";
+//                            Picasso.get().load(iconUrl).into(icon[daysIndex]);
+
+                            //-------------------------------------------------------------------------
+                            
                             switch (description) {
                                 case "clear sky":
                                     id = getResources().getIdentifier("clear.png", "drawable", getPackageName());
