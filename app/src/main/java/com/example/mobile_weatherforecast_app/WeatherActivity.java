@@ -92,6 +92,10 @@ public class WeatherActivity extends Activity {
         if (isConnected) {
             weatherTask wt = new weatherTask();
             wt.execute();
+        } else {
+            Toast.makeText(this, "There is no internet connection :(",
+                    Toast.LENGTH_LONG).show();
+            // TODO: read from json file
         }
     }
 
