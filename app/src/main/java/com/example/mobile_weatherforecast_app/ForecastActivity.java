@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -205,6 +207,11 @@ public class ForecastActivity extends Activity {
                 // same
                 float tempMaxTemp = Float.MIN_VALUE;
                 String description = "";
+                ConnectivityManager connectivityManager =
+                        (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                assert connectivityManager != null;
+                NetworkInfo activeNetwork = connectivityManager.getActiveNetworkInfo();
+                boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
                 int i = 0;
                 while (i < count) {
                     JSONObject object = list.getJSONObject(i);
@@ -229,8 +236,9 @@ public class ForecastActivity extends Activity {
                         ++i;
                     } else {
                         if (daysIndex != 0) {
-                            minTemp[daysIndex].setText(Integer.toString((int) (tempMinTemp - 273.15)) + "°C");
-                            maxTemp[daysIndex].setText(Integer.toString((int) (tempMaxTemp - 273.15)) + "°C");
+                            if (isConnected) {
+                                minTemp[daysIndex].setText(Integer.toString((int) (tempMinTemp - 273.15)) + "°C");
+                                maxTemp[daysIndex].setText(Integer.toString((int) (tempMaxTemp - 273.15)) + "°C");
 
 //                            JSONParser jsonParser = new JSONParser();
 //                            FileReader reader = new FileReader("offlineBase.json");
@@ -243,13 +251,22 @@ public class ForecastActivity extends Activity {
 //                            cityObj.put("min_temp", (int) (tempMinTemp - 273.15));
 //                            cityObj.put("max_temp", (int) (tempMaxTemp - 273.15));
 
-                            Struct struct = new Struct();
-                            struct.cityName = CITY;
-                            struct.logDate = currentDate;
-                            struct.minTemp = (int) (tempMinTemp - 273.15);
-                            struct.maxTemp = (int) (tempMaxTemp - 273.15);
+                                Struct struct = new Struct();
+                                struct.cityName = CITY;
+                                struct.logDate = currentDate;
+                                struct.minTemp = (int) (tempMinTemp - 273.15);
+                                struct.maxTemp = (int) (tempMaxTemp - 273.15);
 
-                            toSave.add(struct);
+                                toSave.add(struct);
+                            } else {
+                                loadData();
+                                for (Struct element : toSave) {
+                                    if (element.cityName.equals(CITY) && element.logDate.equals(currentDate)) {
+                                        minTemp[daysIndex].setText(element.minTemp);
+                                        maxTemp[daysIndex].setText(element.maxTemp);
+                                    }
+                                }
+                            }
 
 //                            JSONArray toWrite = new JSONArray();
 //                            toWrite.put(cityObj);
