@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -21,6 +22,8 @@ import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.time.*;
 import java.time.DayOfWeek;
 
@@ -86,39 +89,61 @@ public class ForecastActivity extends Activity {
 
     }
 
-//    private String read(Context context) {
-//        try {
-//            FileInputStream fis = context.openFileInput("storage.json");
-//            InputStreamReader isr = new InputStreamReader(fis);
-//            BufferedReader bufferedReader = new BufferedReader(isr);
-//            StringBuilder sb = new StringBuilder();
-//            String line;
-//            while ((line = bufferedReader.readLine()) != null) {
-//                sb.append(line);
+//    public static class WriteObjectFile {
+//
+//        private Context parent;
+//        private ObjectInputStream objectIn;
+//        private ObjectOutputStream objectOut;
+//        private Object outputObject;
+//        private String filePath;
+//
+////        WriteObjectFile(){
+////            parent = this;
+////        }
+//
+//        public Object readObject(String fileName){
+//            try {
+//                filePath = parent.getApplicationContext().getFilesDir().getAbsolutePath() + "/" + fileName;
+//                FileInputStream fileIn = new FileInputStream(filePath);
+//                objectIn = new ObjectInputStream(fileIn);
+//                outputObject = objectIn.readObject();
+//            } catch (FileNotFoundException e) {
+//                e.printStackTrace();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            } catch (ClassNotFoundException e) {
+//                e.printStackTrace();
+//            } finally {
+//                if (objectIn != null) {
+//                    try {
+//                        objectIn.close();
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
 //            }
-//            return sb.toString();
-//        } catch (FileNotFoundException fileNotFound) {
-//            return null;
-//        } catch (IOException ioException) {
-//            return null;
-//        }
-//    }
-//
-//    private void create(Context context){
-//        try {
-//            FileOutputStream fos = context.openFileOutput("storage.json",Context.MODE_PRIVATE);
-//            fos.write("{}".getBytes());
-//            fos.close();
-//        } catch (FileNotFoundException ignored) {
-//        } catch (IOException ignored) {
+//            return outputObject;
 //        }
 //
-//    }
-//
-//    public boolean isFilePresent(Context context, String fileName) {
-//        String path = context.getFilesDir().getAbsolutePath() + "/" + fileName;
-//        File file = new File(path);
-//        return file.exists();
+//        public void writeObject(Object inputObject, String fileName){
+//            try {
+//                filePath = parent.getApplicationContext().getFilesDir().getAbsolutePath() + "/" + fileName;
+//                FileOutputStream fileOut = new FileOutputStream(filePath);
+//                objectOut = new ObjectOutputStream(fileOut);
+//                objectOut.writeObject(inputObject);
+//                fileOut.getFD().sync();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            } finally {
+//                if (objectOut != null) {
+//                    try {
+//                        objectOut.close();
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//        }
 //    }
 
     @SuppressLint("StaticFieldLeak")
@@ -163,6 +188,8 @@ public class ForecastActivity extends Activity {
                 // same
                 float tempMaxTemp = Float.MIN_VALUE;
                 String description = "";
+                SharedPreferences sharedPref = ForecastActivity.this.getPreferences(Context.MODE_PRIVATE);
+                @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = sharedPref.edit();
                 int i = 0;
                 while (i < count) {
                     JSONObject object = list.getJSONObject(i);
@@ -201,14 +228,11 @@ public class ForecastActivity extends Activity {
                             cityObj.put("min_temp", (int) (tempMinTemp - 273.15));
                             cityObj.put("max_temp", (int) (tempMaxTemp - 273.15));
 
-                            JSONArray toWrite = new JSONArray();
-                            toWrite.put(cityObj);
+//                            JSONArray toWrite = new JSONArray();
+//                            toWrite.put(cityObj);
 
-                            FileOutputStream fos;
-
-                            fos = openFileOutput("storage.json", MODE_PRIVATE);
-                            fos.write(toWrite.toString().getBytes());
-
+                            editor.putString(String.valueOf(i), cityObj.toString());
+                            editor.apply();
                         }
                         tempMinTemp = Float.MAX_VALUE;
                         tempMaxTemp = Float.MIN_VALUE;
@@ -298,7 +322,7 @@ public class ForecastActivity extends Activity {
                         currentDate = date;
                     }
                 }
-            } catch (JSONException | IOException e) {
+            } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
