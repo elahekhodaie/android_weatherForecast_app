@@ -670,9 +670,7 @@ int drawable tooltip_frame_light 0x7f07007b
 int drawable weather 0x7f07007c
 int drawable week 0x7f07007d
 int drawable wind 0x7f07007e
-int font baskerville 0x7f080000
-int font fonts 0x7f080001
-int font georgia 0x7f080002
+int font fonts 0x7f080000
 int id ALT 0x7f090000
 int id CTRL 0x7f090001
 int id FUNCTION 0x7f090002

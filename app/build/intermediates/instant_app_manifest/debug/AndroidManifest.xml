@@ -36,6 +36,11 @@
             android:name="com.example.mobile_weatherforecast_app.ForecastActivity"
             android:label="forecast"
             android:theme="@style/AppTheme" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.mobile_weatherforecast_app.com.squareup.picasso"
+            android:exported="false" />
     </application>
 
 </manifest>

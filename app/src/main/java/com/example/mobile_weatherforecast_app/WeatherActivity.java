@@ -8,6 +8,8 @@ import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.StrictMode;
@@ -83,8 +85,13 @@ public class WeatherActivity extends Activity {
         humidityTxt = findViewById(R.id.humidity);
 
         weatherTask wt = new weatherTask();
-        wt.execute();
-
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        assert connectivityManager != null;
+        NetworkInfo activeNetwork = connectivityManager.getActiveNetworkInfo();
+        boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
+        if (isConnected)
+            wt.execute();
     }
 
     public void showWeekly(View view) {
