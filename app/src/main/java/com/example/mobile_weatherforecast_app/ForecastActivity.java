@@ -2,29 +2,30 @@ package com.example.mobile_weatherforecast_app;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.view.View;
 
 import androidx.annotation.RequiresApi;
 
-import com.squareup.picasso.Picasso;
-
-import java.io.FileReader;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.time.*;
 import java.time.DayOfWeek;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 
 @SuppressLint("Registered")
@@ -66,12 +67,57 @@ public class ForecastActivity extends Activity {
         icon[3] = (ImageView) findViewById(R.id.imageView3);
         icon[4] =(ImageView)  findViewById(R.id.imageView4);
 
-
-
+        boolean isFilePresent = isFilePresent(this, "storage.json");
+        if(isFilePresent) {
+            String jsonString = read(this);
+            //do the json parsing here and do the rest of functionality of app
+        } else {
+            create(this);
+//            if(isFileCreated) {
+//                //proceed with storing
+//            } else {
+//                //show error or try again.
+//            }
+        }
 
         forecastTask ft = new forecastTask();
         ft.execute();
 
+    }
+
+    private String read(Context context) {
+        try {
+            FileInputStream fis = context.openFileInput("storage.json");
+            InputStreamReader isr = new InputStreamReader(fis);
+            BufferedReader bufferedReader = new BufferedReader(isr);
+            StringBuilder sb = new StringBuilder();
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                sb.append(line);
+            }
+            return sb.toString();
+        } catch (FileNotFoundException fileNotFound) {
+            return null;
+        } catch (IOException ioException) {
+            return null;
+        }
+    }
+
+    private void create(Context context){
+        try {
+            FileOutputStream fos = context.openFileOutput("storage.json",Context.MODE_PRIVATE);
+            fos.write("{}".getBytes());
+            fos.close();
+        } catch (FileNotFoundException ignored) {
+        } catch (IOException ignored) {
+        }
+
+    }
+
+    public boolean isFilePresent(Context context, String fileName) {
+        String path = context.getFilesDir().getAbsolutePath() + "/" + fileName;
+        File file = new File(path);
+        return file.exists();
     }
 
     @SuppressLint("StaticFieldLeak")
@@ -157,9 +203,9 @@ public class ForecastActivity extends Activity {
                             JSONArray toWrite = new JSONArray();
                             toWrite.put(cityObj);
 
-                            FileWriter writer = new FileWriter("offlineBase.json");
-                            writer.write(toWrite.toString());
-                            writer.flush();
+                            FileWriter fileWriter = new FileWriter("storage.json");
+                            fileWriter.write(toWrite.toString());
+                            fileWriter.flush();
 
                         }
                         tempMinTemp = Float.MAX_VALUE;
