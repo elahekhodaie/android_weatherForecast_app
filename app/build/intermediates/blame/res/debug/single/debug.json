@@ -48,6 +48,10 @@
         "source": "/root/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_clear2.png.flat",
+        "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/drawable/clear2.png"
+    },
+    {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/root/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
@@ -158,6 +162,10 @@
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_showerrain.png.flat",
         "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/drawable/showerrain.png"
+    },
+    {
+        "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_snow2.png.flat",
+        "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/drawable/snow2.png"
     },
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -274,6 +282,10 @@
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/root/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_rain2.png.flat",
+        "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/drawable/rain2.png"
     },
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_abc_dialog_material_background.xml.flat",
@@ -580,6 +592,10 @@
         "source": "/root/.gradle/caches/transforms-2/files-2.1/72b2b92ec4ab73ff21fb9bc348de3b22/core-1.0.1/res/layout-v16/notification_template_custom_big.xml"
     },
     {
+        "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_fewclouds2.png.flat",
+        "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/drawable/fewclouds2.png"
+    },
+    {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat",
         "source": "/root/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_cab_background_internal_bg.xml"
     },
@@ -634,6 +650,10 @@
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/layout_activity_forecast.xml.flat",
         "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/layout/activity_forecast.xml"
+    },
+    {
+        "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_scatteredclouds2.png.flat",
+        "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/drawable/scatteredclouds2.png"
     },
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -836,12 +856,12 @@
         "source": "/root/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_abc_btn_check_material.xml.flat",
-        "source": "/root/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_btn_check_material.xml"
-    },
-    {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/root/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_abc_btn_check_material.xml.flat",
+        "source": "/root/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_btn_check_material.xml"
     },
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -964,12 +984,12 @@
         "source": "/root/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_thunderstorm.png.flat",
-        "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/drawable/thunderstorm.png"
-    },
-    {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/root/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_thunderstorm.png.flat",
+        "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/drawable/thunderstorm.png"
     },
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -1102,6 +1122,10 @@
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_weather.png.flat",
         "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/drawable/weather.png"
+    },
+    {
+        "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_mist2.png.flat",
+        "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/drawable/mist2.png"
     },
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_snow.png.flat",
@@ -1482,6 +1506,10 @@
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
         "source": "/root/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_showerrain2.png.flat",
+        "source": "/home/sina/Android/mobile_weatherForecast_app2/app/src/main/res/drawable/showerrain2.png"
     },
     {
         "merged": "/home/sina/Android/mobile_weatherForecast_app2/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_tick_mark_material.xml.flat",

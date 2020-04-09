@@ -14,7 +14,9 @@ import android.widget.TextView;
 import androidx.annotation.RequiresApi;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.time.*;
 import java.time.DayOfWeek;
 import java.util.ArrayList;
@@ -170,15 +172,17 @@ public class ForecastActivity extends Activity {
             return response;
         }
 
-//        public void initiateSaving() {
-//            Gson gson = new Gson();
-//            String data = sharedPref.getString()
-//        }
-
         private void saveData() {
             @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = sharedPref.edit();
             editor.putString("weatherData", new Gson().toJson(toSave));
             editor.apply();
+        }
+
+        private void loadData() {
+            Gson gson = new Gson();
+            String data = sharedPref.getString("weatherData", null);
+            Type type = new TypeToken<ArrayList<Struct>>() {}.getType();
+            toSave = gson.fromJson(data, type);
         }
 
         @RequiresApi(api = Build.VERSION_CODES.O)

@@ -634,9 +634,11 @@ drawable brokenclouds
 drawable buttonshape
 drawable c
 drawable clear
+drawable clear2
 drawable cloudysky
 drawable d
 drawable fewclouds
+drawable fewclouds2
 drawable greysky
 drawable humidity
 drawable ic_launcher_background
@@ -644,6 +646,7 @@ drawable ic_launcher_foreground
 drawable info
 drawable maincloud
 drawable mist
+drawable mist2
 drawable nightsky
 drawable notification_action_background
 drawable notification_bg
@@ -659,9 +662,13 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pressure
 drawable rain
+drawable rain2
 drawable scatteredclouds
+drawable scatteredclouds2
 drawable showerrain
+drawable showerrain2
 drawable snow
+drawable snow2
 drawable sunrise
 drawable sunset
 drawable textfieldshape
@@ -844,6 +851,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
 id textView2
+id textView3
 id time
 id title
 id titleDividerNoCustom
