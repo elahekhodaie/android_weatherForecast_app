@@ -92,6 +92,7 @@ public class WeatherActivity extends Activity {
         boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         System.out.println(isConnected);
+        isConnected = false;
         if (isConnected) {
             weatherTask wt = new weatherTask();
             wt.execute();
@@ -103,7 +104,10 @@ public class WeatherActivity extends Activity {
     }
 
     public void offlineMode() {
+        Intent intent = getIntent();
+        CITY = intent.getStringExtra("CITY");
         Intent forecast = new Intent(this, ForecastActivity.class);
+        forecast.putExtra("CITY", CITY);
         startActivity(forecast);
     }
 

@@ -236,6 +236,7 @@ public class ForecastActivity extends Activity {
                         ++i;
                     } else {
                         if (daysIndex != 0) {
+                            isConnected = false;
                             if (isConnected) {
                                 minTemp[daysIndex].setText(Integer.toString((int) (tempMinTemp - 273.15)) + "°C");
                                 maxTemp[daysIndex].setText(Integer.toString((int) (tempMaxTemp - 273.15)) + "°C");
@@ -259,11 +260,14 @@ public class ForecastActivity extends Activity {
 
                                 toSave.add(struct);
                             } else {
+                                System.out.println("DDDDDDIIIIIIIIIEEEEEEEEEEEEE");
                                 loadData();
                                 for (Struct element : toSave) {
+                                    System.out.println("AAAAAAAAAAAAAAAAAAAAA");
+                                    System.out.println(element.cityName);
                                     if (element.cityName.equals(CITY) && element.logDate.equals(currentDate)) {
-                                        minTemp[daysIndex].setText(element.minTemp);
-                                        maxTemp[daysIndex].setText(element.maxTemp);
+                                        minTemp[daysIndex].setText(element.minTemp + "°C");
+                                        maxTemp[daysIndex].setText(element.maxTemp + "°C");
                                     }
                                 }
                             }
