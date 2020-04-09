@@ -13,24 +13,16 @@ import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import com.google.gson.Gson;
+
 import java.time.*;
 import java.time.DayOfWeek;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 
 @SuppressLint("Registered")
 public class ForecastActivity extends Activity {
@@ -40,6 +32,13 @@ public class ForecastActivity extends Activity {
     TextView[] minTemp = new TextView[5];
     TextView[] maxTemp = new TextView[5];
     ImageView[] icon = new ImageView[5];
+
+    static class Struct {
+        public String cityName;
+        public String logDate;
+        public int maxTemp;
+        public int minTemp;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -149,6 +148,9 @@ public class ForecastActivity extends Activity {
     @SuppressLint("StaticFieldLeak")
     class forecastTask extends AsyncTask<String, Void, String> {
 
+        List<Struct> toSave = new ArrayList<>();
+        SharedPreferences sharedPref = ForecastActivity.this.getPreferences(Context.MODE_PRIVATE);
+
 //        @Override
 //        protected void onPreExecute() {
 //            super .onPreExecute();
@@ -166,6 +168,17 @@ public class ForecastActivity extends Activity {
             String url = "https://api.openweathermap.org/data/2.5/forecast?q=" + CITY + "&appid=" + APIKey;
             response = http.getHttpData(url);
             return response;
+        }
+
+//        public void initiateSaving() {
+//            Gson gson = new Gson();
+//            String data = sharedPref.getString()
+//        }
+
+        private void saveData() {
+            @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putString("weatherData", new Gson().toJson(toSave));
+            editor.apply();
         }
 
         @RequiresApi(api = Build.VERSION_CODES.O)
@@ -188,8 +201,6 @@ public class ForecastActivity extends Activity {
                 // same
                 float tempMaxTemp = Float.MIN_VALUE;
                 String description = "";
-                SharedPreferences sharedPref = ForecastActivity.this.getPreferences(Context.MODE_PRIVATE);
-                @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = sharedPref.edit();
                 int i = 0;
                 while (i < count) {
                     JSONObject object = list.getJSONObject(i);
@@ -222,17 +233,24 @@ public class ForecastActivity extends Activity {
 //
 //                            Object obj = jsonParser.parse(reader);
 //                            JSONObject dataObj = (JSONObject) obj;
-                            JSONObject cityObj = new JSONObject();
-                            cityObj.put("city_name", CITY);
-                            cityObj.put("date", currentDate);
-                            cityObj.put("min_temp", (int) (tempMinTemp - 273.15));
-                            cityObj.put("max_temp", (int) (tempMaxTemp - 273.15));
+//                            JSONObject cityObj = new JSONObject();
+//                            cityObj.put("city_name", CITY);
+//                            cityObj.put("date", currentDate);
+//                            cityObj.put("min_temp", (int) (tempMinTemp - 273.15));
+//                            cityObj.put("max_temp", (int) (tempMaxTemp - 273.15));
+
+                            Struct struct = new Struct();
+                            struct.cityName = CITY;
+                            struct.logDate = currentDate;
+                            struct.minTemp = (int) (tempMinTemp - 273.15);
+                            struct.maxTemp = (int) (tempMaxTemp - 273.15);
+
+                            toSave.add(struct);
 
 //                            JSONArray toWrite = new JSONArray();
 //                            toWrite.put(cityObj);
 
-                            editor.putString(String.valueOf(i), cityObj.toString());
-                            editor.apply();
+
                         }
                         tempMinTemp = Float.MAX_VALUE;
                         tempMaxTemp = Float.MIN_VALUE;
@@ -322,6 +340,7 @@ public class ForecastActivity extends Activity {
                         currentDate = date;
                     }
                 }
+                saveData();
             } catch (JSONException e) {
                 e.printStackTrace();
             }
