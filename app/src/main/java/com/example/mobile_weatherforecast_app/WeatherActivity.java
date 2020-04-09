@@ -84,14 +84,15 @@ public class WeatherActivity extends Activity {
         pressureTxt = findViewById(R.id.pressure);
         humidityTxt = findViewById(R.id.humidity);
 
-        weatherTask wt = new weatherTask();
         ConnectivityManager connectivityManager =
-                (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         assert connectivityManager != null;
         NetworkInfo activeNetwork = connectivityManager.getActiveNetworkInfo();
         boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
-        if (isConnected)
+        if (isConnected) {
+            weatherTask wt = new weatherTask();
             wt.execute();
+        }
     }
 
     public void showWeekly(View view) {

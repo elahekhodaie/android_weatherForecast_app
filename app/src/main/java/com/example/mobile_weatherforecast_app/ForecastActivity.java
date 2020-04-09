@@ -14,12 +14,18 @@ import androidx.annotation.RequiresApi;
 
 import com.squareup.picasso.Picasso;
 
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.*;
 import java.time.DayOfWeek;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 
 @SuppressLint("Registered")
 public class ForecastActivity extends Activity {
@@ -136,6 +142,25 @@ public class ForecastActivity extends Activity {
                         if (daysIndex != 0) {
                             minTemp[daysIndex].setText(Integer.toString((int) (tempMinTemp - 273.15)) + "°C");
                             maxTemp[daysIndex].setText(Integer.toString((int) (tempMaxTemp - 273.15)) + "°C");
+
+//                            JSONParser jsonParser = new JSONParser();
+//                            FileReader reader = new FileReader("offlineBase.json");
+//
+//                            Object obj = jsonParser.parse(reader);
+//                            JSONObject dataObj = (JSONObject) obj;
+                            JSONObject cityObj = new JSONObject();
+                            cityObj.put("city_name", CITY);
+                            cityObj.put("date", currentDate);
+                            cityObj.put("min_temp", (int) (tempMinTemp - 273.15));
+                            cityObj.put("max_temp", (int) (tempMaxTemp - 273.15));
+
+                            JSONArray toWrite = new JSONArray();
+                            toWrite.put(cityObj);
+
+                            FileWriter writer = new FileWriter("offlineBase.json");
+                            writer.write(toWrite.toString());
+                            writer.flush();
+
                         }
                         tempMinTemp = Float.MAX_VALUE;
                         tempMaxTemp = Float.MIN_VALUE;
@@ -184,39 +209,39 @@ public class ForecastActivity extends Activity {
                             
                             switch (description) {
                                 case "clear sky":
-                                    id = getResources().getIdentifier("clear.png", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("clear", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "broken clouds":
-                                    id = getResources().getIdentifier("brokenclouds.png", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("brokenclouds", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "light rain":
-                                    id = getResources().getIdentifier("rain.png", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("rain", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "moderate rain":
-                                    id = getResources().getIdentifier("showerrain.png", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("showerrain", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "thunderstorm":
-                                    id = getResources().getIdentifier("thunderstorm.png", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("thunderstorm", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "few clouds":
-                                    id = getResources().getIdentifier("fewclouds.png", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("fewclouds", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "mist":
-                                    id = getResources().getIdentifier("mist.png", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("mist", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "scattered clouds":
-                                    id = getResources().getIdentifier("scatteredclouds.png", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("scatteredclouds", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "snow":
-                                    id = getResources().getIdentifier("snow.png", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("snow", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                             }
@@ -225,7 +250,7 @@ public class ForecastActivity extends Activity {
                         currentDate = date;
                     }
                 }
-            } catch (JSONException e) {
+            } catch (JSONException | IOException e) {
                 e.printStackTrace();
             }
         }

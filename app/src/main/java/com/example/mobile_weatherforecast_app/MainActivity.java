@@ -2,6 +2,7 @@ package com.example.mobile_weatherforecast_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 
@@ -74,11 +75,11 @@ public class MainActivity extends AppCompatActivity {
 
 
       //  final EditText enterCityNameField = (EditText) findViewById(R.id.cityName);
-        final AutoCompleteTextView enterCityNameField = (AutoCompleteTextView)findViewById(R.id.act) ;
+        @SuppressLint("CutPasteId") final AutoCompleteTextView enterCityNameField = (AutoCompleteTextView)findViewById(R.id.act) ;
         Button showWeatherButton = (Button) findViewById(R.id.angry_btn);
 
         String[] cities = getResources().getStringArray(R.array.city_dataBase);
-        AutoCompleteTextView field = findViewById(R.id.act);
+        @SuppressLint("CutPasteId") AutoCompleteTextView field = findViewById(R.id.act);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, cities);
         field.setAdapter(adapter);
 
