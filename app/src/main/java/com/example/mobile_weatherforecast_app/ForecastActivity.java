@@ -238,6 +238,7 @@ public class ForecastActivity extends Activity {
                         if (daysIndex != 0) {
                             isConnected = false;
                             if (isConnected) {
+                                System.out.println("INTERNET CONNECTION IS LEGIT!!!!!!!!!");
                                 minTemp[daysIndex].setText(Integer.toString((int) (tempMinTemp - 273.15)) + "°C");
                                 maxTemp[daysIndex].setText(Integer.toString((int) (tempMaxTemp - 273.15)) + "°C");
 
