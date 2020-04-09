@@ -13,6 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.RequiresApi;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -203,8 +204,11 @@ public class ForecastActivity extends Activity {
                             JSONArray toWrite = new JSONArray();
                             toWrite.put(cityObj);
 
-                            FileWriter fileWriter = new FileWriter("storage.json");
-                            fileWriter.write(toWrite.toString());
+                            FileWriter fileWriter =
+                                    new FileWriter("storage.json", true);
+                            BufferedWriter bufferedWriter =
+                                    new BufferedWriter(fileWriter);
+                            bufferedWriter.write(toWrite.toString());
                             fileWriter.flush();
 
                         }
