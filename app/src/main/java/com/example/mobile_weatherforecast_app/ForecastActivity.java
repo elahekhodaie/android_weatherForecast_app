@@ -207,7 +207,7 @@ public class ForecastActivity extends Activity {
                     String[] dateAndTime =
                             String.valueOf(object.get("dt_txt")).split("\\s+");
                     String date = dateAndTime[0];
-                    if (dateAndTime[1].equals("12:00"))
+                    //if (dateAndTime[1].equals("12:00"))
                         description =
                                 (String) object.getJSONArray("weather").getJSONObject(0).get("description");
                     if (date.equals(currentDate)) {
@@ -299,19 +299,19 @@ public class ForecastActivity extends Activity {
                             
                             switch (description) {
                                 case "clear sky":
-                                    id = getResources().getIdentifier("clear", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("clear2", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "broken clouds":
-                                    id = getResources().getIdentifier("brokenclouds", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("brokenclouds2", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "light rain":
-                                    id = getResources().getIdentifier("rain", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("rain2", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "moderate rain":
-                                    id = getResources().getIdentifier("showerrain", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("showerrain2", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "thunderstorm":
@@ -319,19 +319,19 @@ public class ForecastActivity extends Activity {
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "few clouds":
-                                    id = getResources().getIdentifier("fewclouds", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("fewclouds2", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "mist":
-                                    id = getResources().getIdentifier("mist", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("mist2", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "scattered clouds":
-                                    id = getResources().getIdentifier("scatteredclouds", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("scatteredclouds2", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                                 case "snow":
-                                    id = getResources().getIdentifier("snow", "drawable", getPackageName());
+                                    id = getResources().getIdentifier("snow2", "drawable", getPackageName());
                                     icon[daysIndex].setImageResource(id);
                                     break;
                             }
